@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"> <!-- Defines character encoding for special characters -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Ensures mobile responsiveness -->
+    <title>Minimalist Journal</title> <!-- Sets the browser title -->
+    <link rel="stylesheet" href="style.css"> <!-- Links to the CSS file for styling -->
+</head>
+<body>
+
+    <!-- Header Section: Displays the website title and tagline -->
+    <header>
+        <h1>Minimalist Journal</h1> <!-- Website Title -->
+        <p>Your thoughts, your space.</p> <!-- Short tagline -->
+    </header>
+
+    <!--<section> is a semantic tag, meaning it indicates that the content inside belongs to a specific section of the page. It's used when the content has a thematic meaning (like a section for "Benefits of Journaling" or "Journal Prompts").
+    <div> is a generic container used when we just need to group elements together for styling but the content itself doesn't necessarily have a specific meaning.
+     In simple terms:
+    Use <section> when the content belongs to a specific topic or purpose.
+    Use <div> when you just need a container for styling or layout without adding meaning.-->
+    
+    <!-- Section explaining the benefits of journaling -->
+    <section class="benefits">
+        <h2>Why Journal?</h2>
+        <div class="benefit-container">
+            <!-- Individual benefit blocks -->
+            <div class="benefit">
+                <img src="images/mental-health.jpg" alt="Mental Clarity">
+                <h3>Mental Clarity</h3>
+                <p>Journaling helps organize thoughts and reduce stress.</p>
+            </div>
+            <div class="benefit">
+                <img src="images/creativity.jpg" alt="Creativity">
+                <h3>Boosts Creativity</h3>
+                <p>Writing helps spark new ideas and enhances self-expression.</p>
+            </div>
+            <div class="benefit">
+                <img src="images/self-reflection.jpg" alt="Self Reflection">
+                <h3>Self-Reflection</h3>
+                <p>Understand yourself better by reflecting on daily experiences.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section with writing prompts for inspiration -->
+    <section class="prompts">
+        <h2>Need Inspiration?</h2>
+        <ul>
+            <li>🌿 What are three things you’re grateful for today?</li>
+            <li>🎯 Describe a challenge you overcame recently.</li>
+            <li>💌 Write a letter to your future self.</li>
+            <li>📖 What’s one lesson you learned this week?</li>
+            <li>🚀 What’s a dream or goal you want to achieve?</li>
+        </ul>
+    </section>
+
+    <!-- Section for motivational quotes -->
+    <section class="quotes">
+        <h2>Motivational Quotes</h2>
+        <img src="images/writing-motivation.jpg" alt="Writing Motivation">
+        <blockquote>“Fill your paper with the breathings of your heart.” – William Wordsworth</blockquote>
+        <blockquote>“Journaling is like whispering to oneself and listening at the same time.” – Mina Murray</blockquote>
+    </section>
+
+    <!-- Section containing a button to start the journal -->\
+    <!--Here, the button is actually a link (<a> tag), so we placed it inside a <section> to visually separate it.
+    This makes sense because "Start Your Journal" is a call to action but not a functional button (it just redirects to another page).-->
+    <section class="entry-link">
+        <a href="journal.html" class="start-btn">Start Your Journal</a>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2025 Minimalist Journal. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

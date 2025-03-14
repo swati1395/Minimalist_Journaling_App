@@ -1,0 +1,179 @@
+/* =======================
+   General Styles (Body & Text)
+   ======================= */
+body {
+    font-family: "Verdana", sans-serif; /* Sets the primary font for the entire website */
+    margin: 0; /* Removes default margins */
+    padding: 0; /* Removes default paddings */
+    background: url("images/journal-bg.jpg") no-repeat center center fixed; /* Sets a background image */
+    background-size: cover; /* Ensures the background covers the whole screen */
+    text-align: center; /* Centers all text on the page */
+    color: #333; /* Default text color (dark gray) */
+}
+
+/* =======================
+   Header Styles
+   ======================= */
+header {
+    background: rgba(255, 255, 255, 0.9); /* Adds a slightly transparent white background */
+    padding: 20px; /* Adds space inside the header */
+    font-size: 24px; /* Increases the font size */
+}
+
+/* Setting different fonts for different headings */
+h1 {
+    font-family: "Comic Sans MS", cursive; /* Fun, handwritten style for h1 */
+}
+
+h2 {
+    font-family: "Verdana", sans-serif; /* Clean, professional font for h2 */
+}
+
+/* =======================
+   Benefits Section
+   ======================= */
+.benefits {
+    padding: 40px; /* Adds spacing inside the section */
+}
+
+.benefit-container {
+    display: flex; /* Enables flexbox for alignment */
+    justify-content: center; /* Centers the content */
+    gap: 20px; /* Adds space between each benefit */
+    flex-wrap: wrap; /* Allows items to wrap on smaller screens */
+}
+
+.benefit {
+    width: 30%; /* Makes each benefit take up 30% of the screen width */
+    padding: 5px; /* Adds padding around each benefit */
+    text-align: center; /* Centers text */
+}
+
+/* Styling for benefit images */
+.benefit img {
+    width: 80px; /* Sets the width */
+    height: 80px; /* Sets the height */
+    border-radius: 50%; /* Makes images circular */
+    margin-bottom: 10px; /* Adds space below images */
+}
+
+/* =======================
+   Journal Prompts Section
+   ======================= */
+.prompts {
+    background: #f9f9f9; /* Light gray background */
+    padding: 40px; /* Adds spacing inside */
+}
+
+.prompts ul {
+    list-style-type: none; /* Removes bullet points */
+    padding: 0; /* Removes default padding */
+}
+
+.prompts li {
+    padding: 12px; /* Adds padding to list items */
+    font-size: 18px; /* Increases text size */
+    font-family: "Comic Sans MS", cursive; /* Gives a friendly, informal look */
+    color: #5a3e1b; /* Brown text color */
+    background: rgba(240, 240, 240, 0.8); /* Soft light gray background */
+    margin: 10px; /* Adds space between prompts */
+    border-radius: 8px; /* Makes edges rounded */
+}
+
+/* =======================
+   Motivational Quotes Section
+   ======================= */
+.quotes {
+    background: #f5e6d3; /* Light brown background */
+    padding: 40px; /* Adds spacing inside */
+    text-align: center; /* Centers text */
+    font-style: italic; /* Makes text italic */
+}
+
+/* Styling for quote images */
+.quotes img {
+    width: 500px; /* Large image width */
+    margin-bottom: 20px; /* Space below image */
+}
+
+/* Styling for blockquote text */
+.quotes blockquote {
+    font-size: 20px; /* Increases quote font size */
+    margin: 20px auto; /* Centers the quotes */
+    width: 60%; /* Limits quote width */
+    border-left: 5px solid #8B4513; /* Adds a brown left border */
+    padding-left: 20px; /* Adds space between text and border */
+}
+
+/* =======================
+   Journal Entry Page
+   ======================= */
+.journal-entry {
+    padding: 40px; /* Adds spacing inside */
+    text-align: center; /* Centers content */
+}
+
+/* Styling for the journal entry title */
+.journal-entry h2 {
+    font-family: "Comic Sans MS", cursive; /* Fun, handwritten font */
+    font-size: 28px; /* Increases size */
+    color: #8B4513; /* Brown color */
+}
+
+/* Styling for journal prompts */
+.entry-prompt {
+    font-family: Verdana, sans-serif; /* Uses a clean and readable font */
+    font-size: 18px; /* Increases text size */
+    color: #444; /* Dark gray text */
+}
+
+/* Styling for journal entry image */
+.journal-entry img {
+    width: 50%; /* Makes image 50% of screen width */
+    border-radius: 10px; /* Rounds image edges */
+    margin-bottom: 20px; /* Adds space below */
+    box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.2); /* Adds a shadow effect */
+}
+
+/* Styling for the journal entry text area */
+textarea {
+    width: 80%; /* Makes the textarea wider */
+    height: 200px; /* Sets a fixed height */
+    padding: 12px; /* Adds padding inside */
+    font-size: 16px; /* Increases font size */
+    border: 2px solid #8B4513; /* Brown border */
+    border-radius: 8px; /* Rounds edges */
+    font-family: Verdana, sans-serif; /* Uses a clean font */
+    background: rgba(255, 255, 255, 0.8); /* Adds a soft white background */
+}
+
+/* =======================
+   Buttons (Including Hover Effects)
+   ======================= */
+.start-btn, .back-btn, .save-btn {
+    display: inline-block; /* Makes buttons inline but allows styling */
+    margin: 20px; /* Adds spacing */
+    padding: 12px 25px; /* Adds padding inside */
+    font-size: 18px; /* Increases button text size */
+    font-family: "Comic Sans MS", cursive; /* Uses fun handwritten font */
+    background: #8B4513; /* Brown background */
+    color: white; /* White text */
+    text-decoration: none; /* Removes underline from links */
+    border-radius: 8px; /* Rounds button edges */
+    transition: 0.3s; /* Makes hover effect smooth */
+}
+
+/* Hover effect: Changes button color and scales up */
+.start-btn:hover, .back-btn:hover, .save-btn:hover {
+    background: #654321; /* Changes color to darker brown on hover */
+    transform: scale(1.05); /* Slightly increases button size */
+}
+
+/* =======================
+   Footer Section
+   ======================= */
+footer {
+    background: rgba(255, 255, 255, 0.9); /* Semi-transparent white background */
+    padding: 10px; /* Adds spacing */
+    font-size: 14px; /* Keeps footer text small */
+}

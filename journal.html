@@ -1,24 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Write Your Journal</title>
+    <meta charset="UTF-8"> <!-- Defines character encoding for special characters -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Ensures mobile responsiveness -->
+    <title>Write Your Journal</title> <!-- Sets the browser tab title -->
     <link rel="stylesheet" href="style.css"> <!-- Connects to CSS file -->
 </head>
 <body>
 
     <!-- Header Section (Journal Entry Page Title) -->
     <header>
-        <h1>Write Your Journal</h1>
-        <p>Express your thoughts freely.</p>
+        <h1>Write Your Journal</h1> <!-- Main heading of the page -->
+        <p>Express your thoughts freely.</p> <!-- Tagline -->
+         <a href="index.html" class="back-btn">🏠 Home</a> <!-- Navigation link back to homepage -->
     </header>
 
+   
+    
     <!-- Section for writing journal entries -->
     <section class="journal-entry">
         <h2>Today's Reflection</h2>
-        <p class="entry-prompt">Take a deep breath and start writing your thoughts.</p>
-        <img src="images/journal-placeholder.jpg" alt="Journal Entry">
+        <p class="entry-prompt">Write freely about your thoughts, emotions, or anything on your mind. No rules—just express yourself! </p>
+        <img src="images/journal-placeholder1.jpg" alt="Journal Entry">
         <textarea placeholder="Write your thoughts here..."></textarea> <!-- Input box for writing -->
         <br>
         <button class="save-btn">Save Entry</button> <!-- Functional Button (Will use JS later) This is a real functional button, which later (if we use JavaScript) can actually save user input.
@@ -28,6 +31,7 @@
     <!-- Section containing a button to go back to homepage -->
     <section class="entry-link">
         <a href="index.html" class="back-btn">⬅ Back to Home</a>
+        <p style="font-size: 10px; color: whitesmoke;">(Entries are not saved yet. Future updates will add this feature!)</p>
     </section>
 
     <!-- Footer -->

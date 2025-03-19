@@ -2,10 +2,10 @@
    General Styles (Body & Text)
    ======================= */
 body {
-    font-family: "Verdana", sans-serif; /* Sets the primary font for the entire website */
+    font-family: "Verdana", sans-serif, Arial, Helvetica; /* Sets the primary font for the entire website */
     margin: 0; /* Removes default margins */
     padding: 0; /* Removes default paddings */
-    background: url("images/journal-bg.jpg") no-repeat center center fixed; /* Sets a background image */
+    background: url("images/journal-bg10.jpg") no-repeat center center fixed; /* Sets a background image */
     background-size: cover; /* Ensures the background covers the whole screen */
     text-align: center; /* Centers all text on the page */
     color: #333; /* Default text color (dark gray) */
@@ -18,6 +18,26 @@ header {
     background: rgba(255, 255, 255, 0.9); /* Adds a slightly transparent white background */
     padding: 20px; /* Adds space inside the header */
     font-size: 24px; /* Increases the font size */
+    background: url('images/header-bg3.jpg') no-repeat center center; 
+    background-size: cover; /* Cover full width */
+    background-position: center;
+    padding: 60px 20px; /* More space for visibility */
+}
+header .start-btn {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    font-size: 18px;
+    background: #8B4513;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+header .start-btn:hover {
+    background: #654321;
+    transform: scale(1.05);
 }
 
 /* Setting different fonts for different headings */
@@ -26,7 +46,7 @@ h1 {
 }
 
 h2 {
-    font-family: "Verdana", sans-serif; /* Clean, professional font for h2 */
+    font-family: "Verdana", sans-serif, Arial, Helvetica;; /* Clean, professional font for h2 */
 }
 
 /* =======================
@@ -51,10 +71,20 @@ h2 {
 
 /* Styling for benefit images */
 .benefit img {
-    width: 80px; /* Sets the width */
-    height: 80px; /* Sets the height */
+    width: 120px; /* Sets the width */
+    height: 120px; /* Sets the height */
     border-radius: 50%; /* Makes images circular */
     margin-bottom: 10px; /* Adds space below images */
+}
+
+.benefit h3 {
+    font-size: 30px; /* Increase title size */
+    font-weight: bold; /* Make it stand out */
+}
+
+.benefit p {
+    font-size: 20px; /* Increase paragraph size */
+    line-height: 1.6; /* Improve readability */
 }
 
 /* =======================
@@ -72,7 +102,7 @@ h2 {
 
 .prompts li {
     padding: 12px; /* Adds padding to list items */
-    font-size: 18px; /* Increases text size */
+    font-size: 28px; /*  text size */
     font-family: "Comic Sans MS", cursive; /* Gives a friendly, informal look */
     color: #5a3e1b; /* Brown text color */
     background: rgba(240, 240, 240, 0.8); /* Soft light gray background */
@@ -84,23 +114,27 @@ h2 {
    Motivational Quotes Section
    ======================= */
 .quotes {
-    background: #f5e6d3; /* Light brown background */
+    background: #E6D5C3; /* Soft warm beige tone to match the background */
     padding: 40px; /* Adds spacing inside */
     text-align: center; /* Centers text */
     font-style: italic; /* Makes text italic */
+    border-radius: 10px; /* Adds a slight rounded effect for elegance */
 }
 
 /* Styling for quote images */
 .quotes img {
-    width: 500px; /* Large image width */
-    margin-bottom: 20px; /* Space below image */
+    width: 80%; /* Adjusts to screen size */
+    max-width: 400px; /* Prevents it from getting too large */
+    margin: 0 auto 20px auto; /* Centers image properly */
+    display: block; /* Ensures it's not inline */
 }
 
 /* Styling for blockquote text */
 .quotes blockquote {
-    font-size: 20px; /* Increases quote font size */
+    font-size: 18px; /*  quote font size */
     margin: 20px auto; /* Centers the quotes */
-    width: 60%; /* Limits quote width */
+    width: 80%; /* Limits quote width */
+    max-width: 600px; /* Keeps it structured */
     border-left: 5px solid #8B4513; /* Adds a brown left border */
     padding-left: 20px; /* Adds space between text and border */
 }
@@ -116,20 +150,20 @@ h2 {
 /* Styling for the journal entry title */
 .journal-entry h2 {
     font-family: "Comic Sans MS", cursive; /* Fun, handwritten font */
-    font-size: 28px; /* Increases size */
+    font-size: 40px; /* Increases size */
     color: #8B4513; /* Brown color */
 }
 
 /* Styling for journal prompts */
 .entry-prompt {
     font-family: Verdana, sans-serif; /* Uses a clean and readable font */
-    font-size: 18px; /* Increases text size */
+    font-size: 20px; /* Increases text size */
     color: #444; /* Dark gray text */
 }
 
 /* Styling for journal entry image */
 .journal-entry img {
-    width: 50%; /* Makes image 50% of screen width */
+    width: 30%; /* Makes image 50% of screen width */
     border-radius: 10px; /* Rounds image edges */
     margin-bottom: 20px; /* Adds space below */
     box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.2); /* Adds a shadow effect */
@@ -138,9 +172,9 @@ h2 {
 /* Styling for the journal entry text area */
 textarea {
     width: 80%; /* Makes the textarea wider */
-    height: 200px; /* Sets a fixed height */
+    height: 300px; /* Sets a fixed height */
     padding: 12px; /* Adds padding inside */
-    font-size: 16px; /* Increases font size */
+    font-size: 30px; /* Increases font size */
     border: 2px solid #8B4513; /* Brown border */
     border-radius: 8px; /* Rounds edges */
     font-family: Verdana, sans-serif; /* Uses a clean font */
@@ -168,6 +202,7 @@ textarea {
     background: #654321; /* Changes color to darker brown on hover */
     transform: scale(1.05); /* Slightly increases button size */
 }
+
 
 /* =======================
    Footer Section
